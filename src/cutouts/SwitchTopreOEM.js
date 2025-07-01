@@ -2,7 +2,7 @@ import Decimal from 'decimal.js'
 import makerjs from 'makerjs'
 import { CutoutGenerator } from './CutoutGenerator'
 
-// Topre 1U switch cutout
+// Topre 1u switch cutout
 // Simple filleted rectangle of 14.6 x 14mm size
 
 export class SwitchTopreOEM extends CutoutGenerator {

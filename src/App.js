@@ -142,6 +142,7 @@ function App() {
                   onChange={e => setSwitchCutoutType(e.target.value)}
                 >
                   <option value="mx-basic">Cherry MX Basic</option>
+                  <option value="mx-basic-1u">Cherry MX Basic (1u Switches)</option>
                   <option value="alps-skcm">Alps SKCM/L</option>
                   <option value="choc-cpg1350">Kailh Choc CPG1350</option>
                   <option value="choc-cpg1232">Kailh Mini Choc CPG1232</option>
@@ -167,6 +168,7 @@ function App() {
                   <option value="alps-aek">Alps AEK</option>
                   <option value="alps-at101">Alps AT101</option>
                   <option value="topre-oem">Topre OEM</option>
+                  <option value="topre-oem-2u">Topre OEM (2u Stabilizer)</option>
                   <option value="topre-rgb">Topre RGB</option>
                   <option value="none">None</option>
 

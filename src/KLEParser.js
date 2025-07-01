@@ -48,7 +48,7 @@ export function parseKle(kleText) {
 
     // *One major exception is x and y*, which offset the current cursor position.
     // - For example, a x:1 would add 1 to the x cursor. 
-    //   Combined with the post-key-process increment, this would increment the X cursor by 2 rather than the usual 1, leaving a 1U gap between the previous key and next key.
+    //   Combined with the post-key-process increment, this would increment the X cursor by 2 rather than the usual 1, leaving a 1u gap between the previous key and next key.
     // - Similar applies to y.
 
     // *The other exception is rotated keys,* which persists for all future keys until reset (r, rx, ry).

@@ -48,6 +48,12 @@ export function SwitchCutoutPane() {
             <p>14 x 14 mm</p>
             <p>The standard switch cutout for modern MX-style switches.</p>
             <br />
+            <h4>Cherry MX Basic</h4>
+            <p>14 x 14 mm</p>
+            <p>The standard switch cutout for modern MX-style switches.<br />
+                Omit 1u switch cutouts for 2u key specification.
+                Can e.g. be set alongside the Topre OEM 2u stabilizers.</p>
+            <br />
             <h4>Alps SKCM/L</h4>
             <p>15.5 x 12.8 mm</p>
             <p>For Alps SKCM and SKCL series switches.</p>
@@ -132,6 +138,10 @@ export function OtherCutoutPane() {
             <h4>Topre OEM</h4>
             <p>A typical cutout suited for OEM Topre stabilizer (not RGB).</p>
             <br />
+            <h4>Topre OEM (2u Stabilizer)</h4>
+            <p>A typical cutout suited for OEM Topre stabilizer (not RGB).<br />
+                Sets 2u stabilizer cutouts for selected switch cutout types other than Topre OEM.</p>
+            <br />
             <h4>Topre RGB</h4>
             <p>A typical cutout suited for RGB Topre stabilizer.</p>
         </div>
@@ -145,7 +155,7 @@ export function AdvancedPane() {
             <h2>Advanced Tuning</h2>
             <br />
             <h4>Unit Size</h4>
-            <p>What 1U equivalates to in millimeters. <br />
+            <p>What 1u equivalates to in millimeters. <br />
                 Standard is 19.05mm, but certain switches such as Choc may need different spacing.</p>
             <br />
             <h4>Kerf</h4>

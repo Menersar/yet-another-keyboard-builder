@@ -21,7 +21,7 @@ export class CutoutGenerator {
     // key is the Key object from key.js.
     // generatorOptions has the following properties:
 
-    // - unitWidth and unitHeight (What 1U equivalates to in millimeters)
+    // - unitWidth and unitHeight (What 1u equivalates to in millimeters)
     // - switchFilletRadius, stabilizerFilletRadius, acousticFilletRadius (Fillet radii in millimeters)
     // - kerf (Kerf amount in millimeters; positive value = smaller cutout)
     // - switchCutoutType, stabilizerCutoutType, and acousticCutoutType
@@ -32,7 +32,7 @@ export class CutoutGenerator {
 
     // Note that the CutoutGenerator template is universal across switches, stabilizers, and similar.
     // Switch cutout generators are expected to return a maker.js model that can be added to the plate.
-    // Stabilizer generators and similar may return null if inapplicable (i.e. 1U keys).
+    // Stabilizer generators and similar may return null if inapplicable (i.e. 1u keys).
 
     // Cutouts should be placed centered upright with the expectation that the switch coords are at the origin; the generator solely has to 
     // generate the correct cutout for the key's dimensions whereas the PlateBuilder is responsible for placing the cutout itself onto the plate.

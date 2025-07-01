@@ -2,6 +2,7 @@ import makerjs from 'makerjs'
 import Decimal from 'decimal.js'
 
 import { SwitchMXBasic } from './cutouts/SwitchMXBasic'
+import { SwitchMXBasic1U } from './cutouts/SwitchMXBasic1U'
 import { SwitchAlpsSKCM } from './cutouts/SwitchAlpsSKCM'
 import { SwitchAlpsSKCP } from './cutouts/SwitchAlpsSKCP'
 import { SwitchChocCPG1232 } from './cutouts/SwitchChocCPG1232'
@@ -20,6 +21,7 @@ import { StabilizerMXSpec } from './cutouts/StabilizerMXSpec'
 import { StabilizerAlpsAEK } from './cutouts/StabilizerAlpsAEK'
 import { StabilizerAlpsAT101 } from './cutouts/StabilizerAlpsAT101'
 import { StabilizerTopreOEM } from './cutouts/StabilizerTopreOEM'
+import { StabilizerTopreOEM2U } from './cutouts/StabilizerTopreOEM2U'
 import { StabilizerTopreRGB } from './cutouts/StabilizerTopreRGB'
 import { NullGenerator } from './cutouts/NullGenerator'
 
@@ -43,6 +45,9 @@ export function buildPlate(keysArray, generatorOptions) {
     switch (generatorOptions.switchCutoutType) {
         case "mx-basic":
             switchGenerator = new SwitchMXBasic();
+            break;
+        case "mx-basic-1u":
+            switchGenerator = new SwitchMXBasic1U();
             break;
         case "alps-skcm":
             switchGenerator = new SwitchAlpsSKCM();
@@ -101,6 +106,9 @@ export function buildPlate(keysArray, generatorOptions) {
             break;
         case "topre-oem":
             stabilizerGenerator = new StabilizerTopreOEM();
+            break;
+        case "topre-oem-2u":
+            stabilizerGenerator = new StabilizerTopreOEM2U();
             break;
         case "topre-rgb":
             stabilizerGenerator = new StabilizerTopreRGB();
